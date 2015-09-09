@@ -1,0 +1,72 @@
+<doctipe html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>UNIDADES</title>
+	<link rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+		<header>
+				<h1>	
+						<div aling="left-side">
+							UNIDADES DE MEDICION DE TEMPERATURA
+						</div>
+				</h1>
+		</header>
+		
+
+<left>
+
+	<script language ="JavaScript">
+		function cenafar (form)
+			{form.fahrenheit.value = form.celsius.value*1.8+32}
+			
+		function faracel (form)
+		{ form.celsi.value = (form.fahren.value-32)/1.8 }
+		
+		function cenakel (form)
+		{form.kelvin.value = form.celsius.value*1+273}
+		
+		function kelacen (form)
+		{form.celsi.value = form.kelv.value -273}
+	</script>
+	
+			<form>
+				<input type ="text" name="celsius" size=5 >
+				<input type ="button" value="Centigrados -> Fahrenheit" onclick="cenafar(this.form)">
+				<input type="text" name="fahrenheit" size=5>
+				<p>
+			</form>
+			
+			<form>
+				<input type ="text" NAME="fahren" SIZE=5 >
+				<input type = "button" value="Fahrenheit -> Centigrados" onClick="faracel(this.form)">
+				<input type="text" NAME="celsi" SIZE=5 >
+				<p>
+			</form>
+			
+			<form>
+				<input type ="text" name="celsius" size=5 >
+				<input type ="button" value="Centigrados -> Kelvin" onclick="cenakel(this.form)">
+				<input type="text" name="kelvin" size=5 >
+				<p>
+			</form>
+			
+			<form>
+				<input type ="text" name="kelv" size=5 >
+				<input type ="button" value="Kelvin -> Centigrados" onclick="kelacen(this.form)">
+				<input type="text" name="celsi" size=5 >
+				<p>
+			</form>
+			
+			
+			
+			
+</left>
+
+</body>
+</html>
